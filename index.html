@@ -337,19 +337,6 @@ body {
 
     <div class="panel-section">
       <div class="field">
-        <label class="field-label" for="inp-amount">Amount</label>
-        <div class="field-prefix-wrap">
-          <span class="field-prefix">$</span>
-          <input id="inp-amount" class="field-input" type="text" inputmode="numeric"
-                 value="5000" autocomplete="off" spellcheck="false">
-        </div>
-      </div>
-      <div class="field">
-        <label class="field-label" for="inp-username">Username</label>
-        <input id="inp-username" class="field-input" type="text"
-               value="name" autocomplete="off" spellcheck="false">
-      </div>
-      <div class="field">
         <label class="field-label">PFP</label>
         <label class="pfp-upload-btn" for="inp-pfp">
           <span id="pfp-upload-label">Upload image</span>
@@ -357,9 +344,22 @@ body {
         </label>
       </div>
       <div class="field">
+        <label class="field-label" for="inp-username">Username</label>
+        <input id="inp-username" class="field-input" type="text"
+               value="name" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="field">
         <label class="field-label" for="inp-description">Description</label>
         <textarea id="inp-description" class="field-textarea" rows="3"
                   autocomplete="off" spellcheck="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+      </div>
+      <div class="field">
+        <label class="field-label" for="inp-amount">Amount</label>
+        <div class="field-prefix-wrap">
+          <span class="field-prefix">$</span>
+          <input id="inp-amount" class="field-input" type="text" inputmode="numeric"
+                 value="5000" autocomplete="off" spellcheck="false">
+        </div>
       </div>
     </div>
 
