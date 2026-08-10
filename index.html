@@ -269,7 +269,7 @@ body {
 /* ── PFP ─────────────────────────────────────────────────── */
 .pfp {
   position: absolute; left:48px; top:48px;
-  width:64px; height:64px; border-radius:8px;
+  width:77px; height:77px; border-radius:8px;
   background:#1a1aff; overflow:hidden; z-index:25;
   display:flex; align-items:center; justify-content:center;
 }
@@ -377,7 +377,7 @@ body {
       <div class="bg-cerulean"></div>
 
       <div class="ticker-strip orange" aria-hidden="true">
-        <div class="ticker-inner"><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span></div>
+        <div class="ticker-inner"><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span></div>
       </div>
 
       <div class="number-container">
@@ -391,7 +391,7 @@ body {
       </div>
 
       <div class="ticker-strip green" aria-hidden="true">
-        <div class="ticker-inner"><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span><span class="ticker-item">REWARDS</span></div>
+        <div class="ticker-inner"><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span><span class="ticker-item">GRANT</span></div>
       </div>
 
       <div class="overlay" aria-hidden="true"></div>
@@ -520,9 +520,9 @@ body {
         const img = new Image();
         img.onload = () => {
           const c = document.createElement('canvas');
-          c.width = 64; c.height = 64;
+          c.width = 77; c.height = 77;
           const cx = c.getContext('2d');
-          cx.drawImage(img, 0, 0, 64, 64);
+          cx.drawImage(img, 0, 0, 77, 77);
           window._pfpDataUrl = c.toDataURL('image/png');
         };
         img.src = url;
@@ -916,7 +916,7 @@ body {
         let dx = scroll % itemW;
         if (dx > 0) dx -= itemW;
         while (dx < W) {
-          ctx.fillText('REWARDS', dx + itemPad, stripY + 30*S);
+          ctx.fillText('GRANT', dx + itemPad, stripY + 30*S);
           dx += itemW;
         }
         ctx.restore();
@@ -968,7 +968,7 @@ body {
           const pfpImg = new Image();
           pfpImg.onload = () => {
             const r = 8 * S;
-            const px = 48 * S, py = 48 * S, pw = 64 * S, ph = 64 * S;
+            const px = 48 * S, py = 48 * S, pw = 77 * S, ph = 77 * S;
             ctx.save();
             ctx.beginPath();
             ctx.moveTo(px + r, py);
