@@ -157,7 +157,7 @@ body {
 /* ── Background sections ────────────────────────────────── */
 .bg-blue     { position: absolute; left:0; top:0;    width:1080px; height:451px; background:#0000ff; }
 .bg-white    { position: absolute; left:0; top:451px; width:1080px; height:380px; background:white; }
-.bg-cerulean { position: absolute; left:0; top:831px; width:1118px; height:260px; background:#3c8aff; }
+.bg-cerulean { position: absolute; left:0; top:831px; width:1118px; height:260px; background:#24207c; }
 
 /* ── Ticker strips ──────────────────────────────────────── */
 .ticker-strip {
@@ -314,7 +314,6 @@ body {
 .num:hover, .num:focus        { box-shadow: none !important; }
 /* ── Builder mode overrides ─────────────────────────────── */
 
-.card.builder .bg-cerulean  { background:#24207c; }
 .card.builder .ticker-strip.orange { background:#ff7f16; }
 .card.builder .ticker-strip.green  { background:#ff7f16; }
 .card.builder .number-wrapper {
@@ -893,7 +892,7 @@ Program</p>
       const isBuilder = currentMode === 'builder';
       ctx.fillStyle = '#0000ff'; ctx.fillRect(0, 0, W, 451*S);
       ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 451*S, W, 380*S);
-      ctx.fillStyle = isBuilder ? '#24207c' : '#3c8aff'; ctx.fillRect(0, 831*S, W, 260*S);
+      ctx.fillStyle = '#24207c'; ctx.fillRect(0, 831*S, W, 260*S);
 
       // ── 3. Ticker strips ──────────────────────────────────────
       const tickerInnerEl = document.querySelector('.ticker-inner');
