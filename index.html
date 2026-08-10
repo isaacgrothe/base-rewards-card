@@ -164,7 +164,7 @@ body {
   position: absolute; left:0; width:1080px; height:60px;
   overflow: hidden; z-index:10;
 }
-.ticker-strip.orange { top:303px; background:#ff7f16; }
+.ticker-strip.orange { top:303px; background:#b6f569; }
 .ticker-strip.green  { top:683px; background:#b6f569; }
 .ticker-inner {
   display: flex; align-items: center; height:100%;
@@ -316,7 +316,7 @@ body {
 
 .card.builder .bg-cerulean  { background:#24207c; }
 .card.builder .ticker-strip.orange { background:#d796ff; }
-.card.builder .ticker-strip.green  { background:#ffbe00; }
+.card.builder .ticker-strip.green  { background:#d796ff; }
 .card.builder .number-wrapper {
   background-image: linear-gradient(110deg,
     #0000ff 6%, #3c8aff 21%, #0000ff 51%, #3c8aff 76%, #0000ff 98%);
@@ -921,8 +921,8 @@ body {
         }
         ctx.restore();
       }
-      drawTicker(303*S, isBuilder ? '#d796ff' : '#ff7f16');
-      drawTicker(683*S, isBuilder ? '#ffbe00' : '#b6f569', true);
+      drawTicker(303*S, isBuilder ? '#d796ff' : '#b6f569');
+      drawTicker(683*S, isBuilder ? '#d796ff' : '#b6f569', true);
 
       // ── 4. Number — shimmer gradient clipped to text ──────────
       const cardEl  = document.getElementById('card');
